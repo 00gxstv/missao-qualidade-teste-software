@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma experiência interativa sobre conceitos, importância, casos reais e tipos de teste de software.">
+    <title>Missão Qualidade | Teste de Software</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Integrantes: Ingrid Gomes e Gustavo Silva. -->
+<main id="inicio">
+      <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Missão Qualidade — início">
+          <span class="brand-mark">MQ</span>
+          <span>Missão Qualidade</span>
+        </a>
+        <nav aria-label="Navegação principal">
+          <a href="#conceito">Conceito</a>
+          <a href="#casos">Casos reais</a>
+          <a href="#tipos">Tipos</a>
+          <a class="nav-cta" href="#quiz">Iniciar quiz</a>
+        </nav>
+      </header>
+
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> Sistema em verificação</p>
+          <h1 id="hero-title">Antes do usuário encontrar o erro, <em>o teste encontra.</em></h1>
+          <p class="hero-lead">
+            Descubra como os testes transformam código em software confiável — e depois
+            prove o que aprendeu em uma missão interativa.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#conceito">Explorar conteúdo <span>↓</span></a>
+            <a class="button button-ghost" href="#quiz">Ir direto ao desafio</a>
+          </div>
+          <p class="team-line"><strong>Projeto em dupla</strong> · Ingrid Gomes + Gustavo Silva</p>
+        </div>
+
+        <div class="mission-panel" aria-label="Painel da missão">
+          <div class="panel-top">
+            <span>quality_check.log</span>
+            <span class="live-label">AO VIVO</span>
+          </div>
+          <div class="terminal-line"><span>01</span><p><b>✓</b> Requisito compreendido</p></div>
+          <div class="terminal-line"><span>02</span><p><b>✓</b> Comportamento validado</p></div>
+          <div class="terminal-line"><span>03</span><p><b>✓</b> Carga suportada</p></div>
+          <div class="terminal-line current"><span>04</span><p><i></i> Experiência em análise...</p></div>
+          <div class="quality-score">
+            <div class="score-ring"><strong>98</strong><small>/100</small></div>
+            <div><span>Índice de confiança</span><strong>Pronto para evoluir</strong></div>
+          </div>
+          <div class="panel-grid">
+            <div><strong>4</strong><span>tipos de teste</span></div>
+            <div><strong>2</strong><span>casos reais</span></div>
+            <div><strong>5</strong><span>desafios</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="definition section" id="conceito" aria-labelledby="definition-title">
+        <div class="section-kicker"><span>01</span> O ponto de partida</div>
+        <div class="definition-grid">
+          <div>
+            <h2 id="definition-title">O que é teste de software?</h2>
+            <p class="definition-text">
+              É o processo de <mark>verificar e avaliar um sistema</mark> para descobrir se ele
+              atende aos requisitos, funciona como esperado e está apto a chegar ao usuário final.
+            </p>
+          </div>
+          <aside class="not-bug" aria-label="Uma distinção importante">
+            <span class="aside-label">Atenção</span>
+            <h3>Testar não prova que não existem erros.</h3>
+            <p>Testar reduz riscos, encontra falhas e gera evidências para tomar decisões melhores.</p>
+          </aside>
+        </div>
+
+        <div class="importance-block">
+          <div class="importance-intro">
+            <p class="mini-label">POR QUE TESTAR?</p>
+            <h3>Qualidade custa menos quando começa cedo.</h3>
+            <p>O teste evita que o cliente seja a primeira pessoa a descobrir um problema.</p>
+          </div>
+          <div class="benefit-list">
+            <article>
+              <span class="benefit-number">01</span>
+              <div><h4>Encontrar falhas</h4><p>Identifica erros antes da entrega e torna a correção mais segura.</p></div>
+              <span aria-hidden="true">✓</span>
+            </article>
+            <article>
+              <span class="benefit-number">02</span>
+              <div><h4>Reduzir riscos</h4><p>Evita prejuízos, indisponibilidade e perda de dados ou confiança.</p></div>
+              <span aria-hidden="true">✓</span>
+            </article>
+            <article>
+              <span class="benefit-number">03</span>
+              <div><h4>Aumentar confiança</h4><p>Dá evidências de que o produto suporta o uso real.</p></div>
+              <span aria-hidden="true">✓</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="failures" id="casos" aria-labelledby="failures-title">
+        <div class="section failures-inner">
+          <div class="section-heading light-heading">
+            <div class="section-kicker"><span>02</span> Quando a qualidade falha</div>
+            <h2 id="failures-title">Dois projetos. Bilhões em risco. Uma mesma lição.</h2>
+            <p>Falhas não nascem apenas no código: requisitos, integração, gestão e validação também decidem o destino de um sistema.</p>
+          </div>
+
+          <div class="case-list">
+            <article class="case-card">
+              <div class="case-index">CASO 01 <span>2000–2005</span></div>
+              <div class="case-title">
+                <span class="country-badge">EUA</span>
+                <h3>Virtual Case File</h3>
+                <p>Modernização do FBI</p>
+              </div>
+              <div class="case-stat"><strong>US$ 170 mi</strong><span>alocados ao esforço encerrado</span></div>
+              <p class="case-description">
+                O sistema pretendia substituir o gerenciamento de casos do FBI, mas foi encerrado
+                sem entrar em operação. Requisitos mal definidos e em constante mudança, falhas de
+                supervisão e fragilidades na gestão de tecnologia comprometeram o projeto.
+              </p>
+              <div class="lesson"><b>Lição</b><p>Velocidade sem requisitos claros produz retrabalho, não progresso.</p></div>
+            </article>
+
+            <article class="case-card">
+              <div class="case-index">CASO 02 <span>2002–2011</span></div>
+              <div class="case-title">
+                <span class="country-badge">REINO UNIDO</span>
+                <h3>NPfIT</h3>
+                <p>Programa nacional de TI do NHS</p>
+              </div>
+              <div class="case-stat"><strong>£ 9,8 bi</strong><span>previsão total reportada em 2013</span></div>
+              <p class="case-description">
+                Criado para conectar prontuários e serviços de saúde, o programa foi desmontado sem
+                alcançar a implantação nacional planejada. Atrasos, integração complexa, contratos
+                rígidos e baixa adesão dos profissionais impediram o resultado esperado.
+              </p>
+              <div class="lesson"><b>Lição</b><p>Tecnologia só funciona quando sistemas e pessoas conseguem trabalhar juntos.</p></div>
+            </article>
+          </div>
+
+          <p class="accuracy-note">Nota: o NPfIT teve componentes implantados, mas não entregou o sistema nacional integrado originalmente prometido.</p>
+        </div>
+      </section>
+
+      <section class="test-types section" id="tipos" aria-labelledby="types-title">
+        <div class="section-heading">
+          <div class="section-kicker"><span>03</span> A caixa de ferramentas</div>
+          <h2 id="types-title">Cada teste responde a uma pergunta diferente.</h2>
+          <p>Da menor função até milhões de acessos simultâneos, a qualidade é verificada em camadas.</p>
+        </div>
+
+        <div class="type-grid">
+          <article class="type-card lime-card">
+            <div class="type-top"><span class="type-code">UT</span><span class="type-order">01</span></div>
+            <h3>Teste unitário</h3>
+            <p>Valida a menor parte do sistema de forma isolada, como uma função ou cálculo.</p>
+            <div class="real-example"><span>NA PRÁTICA</span><p>Uma calculadora soma 8 + 2 e retorna exatamente 10.</p></div>
+            <p class="question-tag">“Esta peça funciona sozinha?”</p>
+          </article>
+
+          <article class="type-card coral-card">
+            <div class="type-top"><span class="type-code">IN</span><span class="type-order">02</span></div>
+            <h3>Teste de integração</h3>
+            <p>Verifica se módulos, serviços e aplicativos trocam informações corretamente.</p>
+            <div class="real-example"><span>NA PRÁTICA</span><p>Ao iniciar uma corrida, o app do motorista atualiza o app do passageiro.</p></div>
+            <p class="question-tag">“As peças conversam entre si?”</p>
+          </article>
+
+          <article class="type-card blue-card">
+            <div class="type-top"><span class="type-code">FN</span><span class="type-order">03</span></div>
+            <h3>Teste funcional</h3>
+            <p>Simula ações reais para confirmar se cada função entrega o resultado esperado.</p>
+            <div class="real-example"><span>NA PRÁTICA</span><p>Entrar no Instagram, publicar uma foto e vê-la aparecer no feed.</p></div>
+            <p class="question-tag">“O usuário consegue fazer a tarefa?”</p>
+          </article>
+
+          <article class="type-card purple-card">
+            <div class="type-top"><span class="type-code">PF</span><span class="type-order">04</span></div>
+            <h3>Teste de desempenho</h3>
+            <p>Mede velocidade, estabilidade e capacidade sob grande volume de acessos.</p>
+            <div class="real-example"><span>NA PRÁTICA</span><p>Uma loja permanece estável durante o pico de acessos da Black Friday.</p></div>
+            <p class="question-tag">“O sistema aguenta o tranco?”</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quiz-section" id="quiz" aria-labelledby="quiz-title">
+        <div class="section quiz-inner">
+          <div class="quiz-intro">
+            <p class="quiz-overline">MISSÃO FINAL · 5 DESAFIOS</p>
+            <h2 id="quiz-title">Você consegue liberar o sistema?</h2>
+            <p>Marque uma alternativa em cada cartão. A resposta aparece na hora — sem JavaScript.</p>
+            <div class="quiz-rule"><span>!</span><p><strong>Regra da missão</strong>Leia com atenção e tente responder antes de voltar ao conteúdo.</p></div>
+          </div>
+
+          <form class="quiz-form">
+            <fieldset class="question-card">
+              <legend><span>01</span>Qual é o principal objetivo do teste de software?</legend>
+              <input class="quiz-radio" type="radio" id="q1a" name="q1" />
+              <input class="quiz-radio" type="radio" id="q1b" name="q1" />
+              <input class="quiz-radio" type="radio" id="q1c" name="q1" />
+              <div class="options">
+                <label for="q1a"><b>A</b> Garantir que nunca existirá qualquer erro</label>
+                <label for="q1b"><b>B</b> Avaliar o sistema, encontrar falhas e reduzir riscos</label>
+                <label for="q1c"><b>C</b> Deixar o visual do aplicativo mais bonito</label>
+              </div>
+              <p class="feedback feedback-a wrong">Quase! Nenhum teste consegue provar que nunca existirá erro.</p>
+              <p class="feedback feedback-b correct">Correto! Testar gera evidências, encontra falhas e reduz riscos.</p>
+              <p class="feedback feedback-c wrong">Não é essa. Aparência pode ser avaliada, mas não é o objetivo principal.</p>
+            </fieldset>
+
+            <fieldset class="question-card">
+              <legend><span>02</span>Qual teste valida uma função isolada, como um cálculo?</legend>
+              <input class="quiz-radio" type="radio" id="q2a" name="q2" />
+              <input class="quiz-radio" type="radio" id="q2b" name="q2" />
+              <input class="quiz-radio" type="radio" id="q2c" name="q2" />
+              <div class="options">
+                <label for="q2a"><b>A</b> Teste de desempenho</label>
+                <label for="q2b"><b>B</b> Teste funcional</label>
+                <label for="q2c"><b>C</b> Teste unitário</label>
+              </div>
+              <p class="feedback feedback-a wrong">Não é essa. Desempenho mede comportamento sob carga.</p>
+              <p class="feedback feedback-b wrong">Quase! O funcional verifica tarefas e requisitos do usuário.</p>
+              <p class="feedback feedback-c correct">Correto! O unitário examina a menor parte isolada.</p>
+            </fieldset>
+
+            <fieldset class="question-card">
+              <legend><span>03</span>Uber atualiza motorista e passageiro ao mesmo tempo. Qual teste verifica essa comunicação?</legend>
+              <input class="quiz-radio" type="radio" id="q3a" name="q3" />
+              <input class="quiz-radio" type="radio" id="q3b" name="q3" />
+              <input class="quiz-radio" type="radio" id="q3c" name="q3" />
+              <div class="options">
+                <label for="q3a"><b>A</b> Teste de integração</label>
+                <label for="q3b"><b>B</b> Teste unitário</label>
+                <label for="q3c"><b>C</b> Teste de desempenho</label>
+              </div>
+              <p class="feedback feedback-a correct">Correto! Integração verifica a troca de dados entre partes do sistema.</p>
+              <p class="feedback feedback-b wrong">Não é essa. Aqui o foco não é uma peça isolada.</p>
+              <p class="feedback feedback-c wrong">Não é essa. O cenário destaca comunicação, não volume de acessos.</p>
+            </fieldset>
+
+            <fieldset class="question-card">
+              <legend><span>04</span>O que aconteceu com o Virtual Case File do FBI?</legend>
+              <input class="quiz-radio" type="radio" id="q4a" name="q4" />
+              <input class="quiz-radio" type="radio" id="q4b" name="q4" />
+              <input class="quiz-radio" type="radio" id="q4c" name="q4" />
+              <div class="options">
+                <label for="q4a"><b>A</b> Tornou-se o sistema definitivo em 2005</label>
+                <label for="q4b"><b>B</b> Foi encerrado sem entrar em operação</label>
+                <label for="q4c"><b>C</b> Falhou apenas por excesso de usuários</label>
+              </div>
+              <p class="feedback feedback-a wrong">Incorreto. O projeto não chegou a se tornar operacional.</p>
+              <p class="feedback feedback-b correct">Correto! O esforço foi encerrado após três anos e US$ 170 milhões.</p>
+              <p class="feedback feedback-c wrong">Não é essa. Os problemas envolveram requisitos, gestão e supervisão.</p>
+            </fieldset>
+
+            <fieldset class="question-card">
+              <legend><span>05</span>Qual teste ajuda uma loja a se preparar para a Black Friday?</legend>
+              <input class="quiz-radio" type="radio" id="q5a" name="q5" />
+              <input class="quiz-radio" type="radio" id="q5b" name="q5" />
+              <input class="quiz-radio" type="radio" id="q5c" name="q5" />
+              <div class="options">
+                <label for="q5a"><b>A</b> Teste de desempenho</label>
+                <label for="q5b"><b>B</b> Teste unitário</label>
+                <label for="q5c"><b>C</b> Apenas teste visual</label>
+              </div>
+              <p class="feedback feedback-a correct">Correto! Ele mede estabilidade e resposta com muitos acessos.</p>
+              <p class="feedback feedback-b wrong">Quase! Unitários são importantes, mas não simulam o pico completo.</p>
+              <p class="feedback feedback-c wrong">Não é essa. O desafio é capacidade e estabilidade sob carga.</p>
+            </fieldset>
+          </form>
+
+          <div class="mission-complete">
+            <div class="complete-mark">✓</div>
+            <div><p>CHECKPOINT FINAL</p><h3>Conteúdo concluído.</h3><span>Respondeu às cinco? Compare seus acertos e revise os cartões acima.</span></div>
+            <a href="#inicio">Revisar conteúdo ↑</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sources section" aria-labelledby="sources-title">
+        <div>
+          <p class="mini-label">TRANSPARÊNCIA</p>
+          <h2 id="sources-title">Fontes consultadas</h2>
+        </div>
+        <div class="source-links">
+          <a href="https://oig.justice.gov/sites/default/files/legacy/reports/FBI/a0614/final.pdf" target="_blank" rel="noreferrer"><span>01</span><p><strong>U.S. Department of Justice</strong>Relatório sobre o Virtual Case File</p><b>↗</b></a>
+          <a href="https://publications.parliament.uk/pa/cm201314/cmselect/cmpubacc/294/29404.htm" target="_blank" rel="noreferrer"><span>02</span><p><strong>UK Parliament</strong>Relatório sobre o NPfIT desmontado</p><b>↗</b></a>
+        </div>
+      </section>
+
+      <footer>
+        <a class="brand footer-brand" href="#inicio"><span class="brand-mark">MQ</span><span>Missão Qualidade</span></a>
+        <p>Trabalho acadêmico · Teste de Software · 2026</p>
+        <p class="footer-names">Ingrid Gomes <span>+</span> Gustavo Silva</p>
+      </footer>
+    </main>
+  </body>
+</html>
